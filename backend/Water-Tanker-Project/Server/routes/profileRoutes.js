@@ -1,0 +1,10 @@
+const express = require("express");
+const bcrypt = require("bcryptjs");
+const User = require("../models/userModel");
+const Vendor = require("../models/vendorModel");
+const { protect } = require("../middleware/auth");
+const router = express.Router();
+router.get("/me", protect, async(req,res)=>res.json({success:true,user:{id:req.user._id,name:req.user.name,email:req.user.email,phone:req.user.phone,role:req.user.role,businessName:req.user.businessName||""}}));
+router.put("/me", protect, async(req,res)=>{ const update={}; for(const k of ["name","email","phone","businessName"])if(req.body[k]!==undefined)update[k]=String(req.body[k]).trim(); if(update.email)update.email=update.email.toLowerCase(); const exists=await User.findOne({$or:[...(update.email?[{email:update.email}]:[]),...(update.phone?[{phone:update.phone}]:[])] ,_id:{$ne:req.user._id}}); if(exists)return res.status(409).json({success:false,message:"Email or phone is already in use"}); const user=await User.findByIdAndUpdate(req.user._id,update,{new:true,runValidators:true}).select("-password"); if(req.user.role==="vendor")await Vendor.findOneAndUpdate({userId:user._id},{name:user.name,businessName:user.businessName,phone:user.phone}); res.json({success:true,user:{id:user._id,name:user.name,email:user.email,phone:user.phone,role:user.role,businessName:user.businessName||""}}); });
+router.put("/password", protect, async(req,res)=>{const {currentPassword,newPassword}=req.body; if(!currentPassword||!newPassword||newPassword.length<8)return res.status(400).json({success:false,message:"Valid current and new passwords are required"}); const user=await User.findById(req.user._id); if(!(await bcrypt.compare(currentPassword,user.password)))return res.status(400).json({success:false,message:"Current password is incorrect"}); user.password=await bcrypt.hash(newPassword,12); await user.save(); res.json({success:true});});
+module.exports=router;

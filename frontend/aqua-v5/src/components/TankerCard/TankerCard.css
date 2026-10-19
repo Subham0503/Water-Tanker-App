@@ -1,0 +1,8 @@
+.tanker-card{min-height:104px;background:#dff2ff;border-radius:8px;padding:9px;display:grid;grid-template-columns:94px 1fr auto;align-items:center;gap:9px}.tanker-image{height:82px;display:grid;place-items:center;overflow:hidden}.tanker-image img{width:100%;height:100%;object-fit:contain}.tanker-info{display:flex;flex-direction:column;gap:4px}.tanker-info strong{font-size:11px}.tanker-info span{font-size:9px;color:#67788b}.tanker-info b{font-size:11px}.primary-btn{border:0;background:#2563eb;color:#fff;border-radius:8px;font-weight:700;cursor:pointer}.primary-btn.small{padding:10px 12px;font-size:10px}
+
+.tanker-card{min-height:116px;padding:11px;grid-template-columns:104px 1fr auto;gap:10px}
+.tanker-image{height:94px}
+.tanker-info{gap:5px}
+.tanker-info strong{font-size:13px}
+.tanker-info span{font-size:10px}
+.tanker-info b{font-size:13px}

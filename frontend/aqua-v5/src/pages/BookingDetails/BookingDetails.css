@@ -1,0 +1,22 @@
+.details-content{padding:5px 10px 14px;flex:1}.summary-card{background:#dff2ff;border-radius:8px;box-shadow:0 2px 4px #0002;padding:9px}.summary-top{display:flex;gap:12px;align-items:center}.summary-top .mini-truck{width:70px;height:58px;overflow:hidden}.summary-top .mini-truck img{width:100%;height:100%;object-fit:contain}.summary-top div:nth-child(2){display:flex;flex-direction:column;gap:2px}.summary-top strong{font-size:10px}.summary-top span{font-size:8px;color:#64748b}.summary-lines{margin-top:8px;display:flex;flex-direction:column}.summary-lines span{display:flex;justify-content:space-between;border-top:1px solid #bfd5e5;padding:3px 8px;font-size:8px;color:#64748b}.summary-lines b{color:#111}.summary-lines .total-line{font-size:9px;color:#111;background:#eef7ff;border-radius:5px;margin-top:3px}.summary-lines .total-line b{color:#2563eb}.terms{margin-top:8px;background:#dff2ff;border-radius:8px;padding:9px;font-size:8px;color:#64748b}.terms h3{color:#111;font-size:10px;display:flex;gap:4px;align-items:center;margin:0 0 6px}.terms ul{padding-left:15px;margin:0;display:flex;flex-direction:column;gap:4px}.refund{margin-top:7px;background:#fee2e2;color:#ef4444;padding:7px;border-radius:6px}.agree{display:flex;gap:6px;align-items:center;margin:11px 8px 7px;color:#64748b;font-size:8px}.agree input{accent-color:#2563eb}.delivery-note{margin-top:9px;background:#f8fafc;border:1px solid #e2e8f0;border-radius:8px;padding:8px 9px;display:flex;flex-direction:column;gap:3px}.delivery-note strong{font-size:9px;color:#111}.delivery-note span{font-size:8px;line-height:1.35;color:#64748b}.continue:disabled{background:#93c5fd;cursor:not-allowed}
+
+.details-content{padding:8px 10px 20px}
+.summary-card{padding:12px;border-radius:10px}
+.summary-top{gap:13px}
+.summary-top .mini-truck{width:84px;height:68px}
+.summary-top strong{font-size:12px}
+.summary-top span{font-size:9px}
+.summary-lines{margin-top:10px}
+.summary-lines span{padding:5px 8px;font-size:9px}
+.summary-lines b{font-size:9px}
+.terms{margin-top:10px;padding:11px;font-size:9px}
+.terms h3{font-size:11px;margin-bottom:7px}
+.terms ul{gap:5px}
+.agree{margin:12px 8px 8px;font-size:9px}
+.delivery-note{padding:10px}
+.delivery-note strong{font-size:10px}
+.delivery-note span{font-size:9px}
+.continue{height:40px;font-size:11px}
+
+/* Larger, readable terms and tighter use of the phone viewport. */
+.details-content{display:flex;flex-direction:column;gap:10px;min-height:calc(100vh - 116px);padding-bottom:12px}.terms{font-size:11px;line-height:1.5;padding:13px}.terms h3{font-size:13px;margin-bottom:8px}.terms ul{gap:6px}.terms li{line-height:1.45}.refund{font-size:10px;line-height:1.45;padding:9px}.agree{font-size:10px;line-height:1.4;margin:2px 8px 0}.agree input{width:17px;height:17px;flex:0 0 auto}.delivery-note{margin-top:0}.delivery-note strong{font-size:11px}.delivery-note span{font-size:10px;line-height:1.45}.details-content .continue{margin-top:auto}

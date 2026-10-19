@@ -1,0 +1,13 @@
+.schedule-content{padding:5px 10px 14px;flex:1}.schedule-tanker{margin-bottom:12px}.schedule-content h2{font-size:13px;margin:10px 3px 7px;display:flex;gap:5px;align-items:center}.date-row{display:grid;grid-template-columns:repeat(5,1fr);gap:8px}.date{height:64px;border:1px solid #9ca3af;border-radius:9px;background:#fff;display:flex;justify-content:center;align-items:center;color:#111;font-weight:700;font-size:9px;line-height:1.25}.date.active{background:#2563eb;color:#fff;border-color:#2563eb}.express-box{width:100%;min-height:55px;background:#dff2ff;border:1px solid #94a3b8;border-radius:8px;display:flex;justify-content:space-between;align-items:center;padding:8px 9px;font-size:9px;color:#111;text-align:left;cursor:pointer}.express-box strong{text-align:right;color:#16a34a}.express-box.selected{background:#2563eb;border-color:#2563eb;color:#fff}.express-box.selected strong{color:#fff}.slots{display:flex;flex-direction:column;gap:8px;margin-top:10px}.slot{min-height:31px;border:1px solid #cbd5e1;border-radius:8px;background:#e2e8f0;display:flex;justify-content:space-between;align-items:center;padding:0 10px;font-size:9px;color:#111;cursor:pointer;transition:.15s}.slot:hover:not(:disabled){border-color:#2563eb}.slot.selected{background:#2563eb;border-color:#2563eb;color:#fff}.slot.selected .green,.slot.selected .red{color:#fff}.slot:disabled{cursor:not-allowed;opacity:1;background:#f1f5f9;color:#64748b;border-color:#e2e8f0}.green{color:#16a34a}.red{color:#dc2626}.slot-status-selected{color:#fff}.continue{width:100%;height:34px;margin-top:10px;font-size:10px}.continue:disabled{background:#93c5fd;cursor:not-allowed}
+
+.schedule-content{padding:8px 10px 20px}
+.schedule-content h2{font-size:14px;margin:12px 3px 8px}
+.date-row{gap:7px}
+.date{height:68px;font-size:10px}
+.express-box{min-height:64px;padding:10px;font-size:10px}
+.slots{gap:9px;margin-top:11px}
+.slot{min-height:38px;padding:0 11px;font-size:10px}
+.continue{height:40px;margin-top:12px;font-size:11px}
+
+/* Express mode: regular slots are replaced by an automatically calculated one-hour window. */
+.express-time-card{margin-top:10px;background:#eef7ff;border:1px solid #bfdbfe;border-radius:10px;padding:12px;display:flex;flex-direction:column;gap:3px}.express-time-card span{font-size:10px;color:#64748b}.express-time-card b{font-size:14px;color:#2563eb}.express-time-card small{font-size:9px;color:#64748b}

@@ -1,0 +1,8 @@
+.methods-page{padding:12px;flex:1}.saved-method{width:100%;min-height:62px;background:#fff;border:1px solid #cbd5e1;border-radius:9px;margin-bottom:9px;padding:9px 11px;display:grid;grid-template-columns:25px 1fr 20px;align-items:center;text-align:left;color:#334155}.saved-method.selected{border-color:#2563eb;background:#eff6ff}.saved-method svg:last-child{color:#2563eb}.saved-method div{display:flex;flex-direction:column;gap:3px}.saved-method b{font-size:10px}.saved-method small{font-size:8px;color:#64748b}.add-method{width:100%;height:48px;border:1px dashed #94a3b8;background:#f8fafc;color:#2563eb;border-radius:9px;font-size:9px;font-weight:700;display:flex;justify-content:center;align-items:center;gap:6px}.method-done{width:100%;height:38px;margin-top:14px;font-size:10px}
+
+.methods-page{padding:14px 12px 22px}
+.saved-method{min-height:72px;padding:10px 12px}
+.saved-method b{font-size:11px}
+.saved-method small{font-size:9px}
+.add-method{height:52px;font-size:10px}
+.method-done{height:42px;font-size:11px}

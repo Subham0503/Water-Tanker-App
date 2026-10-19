@@ -1,0 +1,19 @@
+.payment-content{padding:9px 10px 16px;flex:1}.payment-summary{background:#dff2ff;border-radius:9px;padding:10px;display:flex;gap:10px;align-items:center;border:1px solid #c7e7fb}.payment-tanker{width:88px;height:70px;overflow:hidden;flex:none}.payment-tanker img{width:100%;height:100%;object-fit:contain}.payment-summary div:last-child{display:flex;flex-direction:column;gap:4px}.payment-summary strong{font-size:11px;color:#111}.payment-summary span{font-size:8px;color:#64748b}.payment-location{margin-top:8px;padding:9px 10px;border:1px solid #e2e8f0;border-radius:8px;background:#fff;display:flex;flex-direction:column;gap:3px}.payment-location span{font-size:8px;color:#64748b}.payment-location b{font-size:9px;color:#111}.payment-content h2{font-size:12px;margin:14px 3px 8px}.method{width:100%;min-height:59px;background:#fff;border:1px solid #cbd5e1;border-radius:9px;margin-bottom:8px;padding:8px 10px;display:grid;grid-template-columns:25px 1fr 20px;align-items:center;text-align:left;color:#334155;cursor:pointer}.method.active{border-color:#2563eb;background:#eff6ff;box-shadow:0 0 0 1px #2563eb inset}.method>svg:first-child{color:#2563eb}.method svg:last-child{color:#2563eb}.method div{display:flex;flex-direction:column;gap:3px}.method b{font-size:10px}.method small{font-size:8px;color:#64748b}.amount-card{margin-top:11px;background:#f8fafc;border:1px solid #e2e8f0;border-radius:8px;padding:10px;display:grid;grid-template-columns:1fr auto;gap:7px;font-size:8px;color:#64748b}.amount-card b{color:#111;font-size:9px}.amount-card strong{font-size:11px;color:#111;border-top:1px solid #cbd5e1;padding-top:8px;margin-top:2px}.amount-card strong:last-child{color:#2563eb}.pay-btn{width:100%;height:38px;margin-top:13px;font-size:10px}.payment-note{text-align:center;color:#94a3b8;font-size:7px;margin-top:8px}
+
+.payment-content{padding:11px 10px 20px}
+.payment-summary{padding:12px}
+.payment-tanker{width:100px;height:78px}
+.payment-summary strong{font-size:12px}
+.payment-summary span{font-size:9px}
+.payment-location{padding:10px 11px}
+.payment-location span{font-size:9px}
+.payment-location b{font-size:10px}
+.payment-content h2{font-size:14px;margin:16px 3px 9px}
+.method{min-height:68px;padding:10px 11px}
+.method b{font-size:11px}
+.method small{font-size:9px}
+.amount-card{padding:11px;font-size:9px}
+.amount-card b{font-size:10px}
+.amount-card strong{font-size:12px}
+.pay-btn{height:42px;font-size:11px}
+.payment-note{font-size:8px}

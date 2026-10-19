@@ -1,0 +1,11 @@
+.contact-page{padding:9px 10px 12px;flex:1}.contact-hero{text-align:center;padding:12px 0 14px}.headset{width:70px;height:70px;border-radius:50%;background:#eff6ff;color:#2563eb;display:grid;place-items:center;margin:0 auto 10px}.contact-hero h1{font-size:14px;margin:0 0 4px}.contact-hero p{font-size:9px;color:#64748b;margin:0}.contact-card{width:100%;min-height:61px;background:#fff;border:1px solid #e2e8f0;border-radius:9px;margin-bottom:8px;padding:9px 11px;display:grid;grid-template-columns:28px 1fr 18px;align-items:center;text-align:left;color:#334155;box-shadow:0 2px 5px #0001}.contact-card>svg:first-child{color:#2563eb}.contact-card div{display:flex;flex-direction:column;gap:3px}.contact-card b{font-size:10px}.contact-card small{font-size:8px;color:#64748b;line-height:1.35}.contact-card>svg:last-child{color:#94a3b8}.back-profile{width:100%;height:35px;margin-top:3px;border:1px solid #2563eb;background:#fff;color:#2563eb;border-radius:8px;font-size:9px;font-weight:700}
+
+.contact-page{padding:11px 10px 20px}
+.contact-hero{padding:15px 0 17px}
+.headset{width:76px;height:76px}
+.contact-hero h1{font-size:16px}
+.contact-hero p{font-size:10px}
+.contact-card{min-height:68px;padding:10px 12px;margin-bottom:9px}
+.contact-card b{font-size:11px}
+.contact-card small{font-size:9px}
+.back-profile{height:40px;font-size:10px}

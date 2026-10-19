@@ -1,0 +1,7 @@
+import React from "react";
+import { ChevronRight, Mail, MapPin, MessageCircle, Phone } from "lucide-react";
+import { useNavigate } from "react-router-dom";
+import Header from "../../components/Header/Header";
+import BottomNav from "../../components/BottomNav/BottomNav";
+import "./ContactUs.css";
+export default function ContactUs(){const navigate=useNavigate();return <main className="mobile-page"><Header back title="Contact Us"/><section className="contact-page"><div className="contact-hero"><div className="headset"><MessageCircle size={38}/></div><h1>We are here to help!</h1><p>Reach out to us for any support</p></div><button className="contact-card"><Phone size={21}/><div><b>Call Us</b><small>+91 98765 43210</small></div><ChevronRight size={17}/></button><button className="contact-card"><MessageCircle size={21}/><div><b>WhatsApp</b><small>+91 98765 43210</small></div><ChevronRight size={17}/></button><button className="contact-card"><Mail size={21}/><div><b>Email Us</b><small>support@aquaflow.com</small></div><ChevronRight size={17}/></button><button className="contact-card"><MapPin size={21}/><div><b>Office Address</b><small>AquaFlow Services Pvt. Ltd.<br/>123, Water Street, Indore,<br/>Madhya Pradesh - 452001</small></div><ChevronRight size={17}/></button><button className="back-profile" onClick={()=>navigate("/profile")}>Back to Profile</button></section><BottomNav/></main>}

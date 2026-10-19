@@ -1,0 +1,25 @@
+.track-content{padding:8px 10px 12px;flex:1;background:#fff}.track-banner{background:#e8f8f0;border-radius:9px;padding:11px;display:flex;gap:10px;align-items:center}.track-banner>span{font-size:24px}.track-banner div{display:flex;flex-direction:column;gap:3px}.track-banner b{font-size:11px}.track-banner small{font-size:8px;color:#64748b}.track-card{margin-top:9px;background:#fff;border:1px solid #dbeafe;border-radius:10px;box-shadow:0 2px 7px #0001;padding:10px}.driver-row{display:grid;grid-template-columns:42px 1fr 34px;align-items:center;gap:8px}.driver-avatar{width:42px;height:42px;border-radius:50%;background:#dbeafe;color:#2563eb;display:grid;place-items:center;font-size:11px;font-weight:800}.driver-row div:nth-child(2){display:flex;flex-direction:column;gap:2px}.driver-row b{font-size:11px}.driver-row small{font-size:8px;color:#64748b}.round-blue{width:32px;height:32px;border:0;border-radius:50%;background:#eff6ff;color:#2563eb;display:grid;place-items:center}.track-details{display:grid;grid-template-columns:1fr 1fr;gap:7px;margin-top:10px;padding-top:9px;border-top:1px solid #e5e7eb}.track-details span{font-size:8px;color:#64748b;display:flex;flex-direction:column;gap:3px}.track-details b{font-size:9px;color:#111}.track-details span:last-child{grid-column:1/-1}.timeline-title{font-size:10px;font-weight:800;margin:13px 0 7px}.timeline{padding-left:5px}.timeline-item{position:relative;display:grid;grid-template-columns:24px 1fr;gap:8px;min-height:42px}.timeline-item:not(:last-child)::after{content:"";position:absolute;left:10px;top:19px;width:2px;height:30px;background:#cbd5e1}.timeline-item.done:not(:last-child)::after,.timeline-item.current:not(:last-child)::after{background:#2563eb}.dot{width:20px;height:20px;border-radius:50%;border:2px solid #94a3b8;background:#fff;color:#94a3b8;display:grid;place-items:center;z-index:1}.done .dot{background:#16a34a;border-color:#16a34a;color:#fff}.current .dot{background:#2563eb;border-color:#2563eb;color:#fff}.timeline-item>div:last-child{display:flex;flex-direction:column;gap:3px}.timeline-item b{font-size:9px}.timeline-item small{font-size:8px;color:#64748b}.current b{color:#2563eb}.track-summary{margin-top:9px;background:#f8fafc;border:1px solid #e2e8f0;border-radius:8px;padding:9px;display:grid;grid-template-columns:1fr auto;gap:7px;font-size:8px}.track-summary div{display:flex;justify-content:space-between}.track-summary span{color:#64748b}.track-summary b{font-size:9px}.share-location{margin-top:9px;width:100%;height:32px;border:1px solid #2563eb;background:#fff;color:#2563eb;border-radius:8px;font-size:9px;font-weight:800;display:flex;align-items:center;justify-content:center;gap:6px}.secondary-link{margin-top:7px;width:100%;border:0;background:transparent;color:#2563eb;font-size:9px;font-weight:700}
+
+.track-content{padding:10px 10px 20px}
+.track-banner{padding:13px}
+.track-banner>span{font-size:28px}
+.track-banner b{font-size:12px}
+.track-banner small{font-size:9px}
+.track-card{margin-top:11px;padding:12px}
+.driver-row{grid-template-columns:46px 1fr 38px;gap:9px}
+.driver-avatar{width:46px;height:46px;font-size:12px}
+.driver-row b{font-size:12px}
+.driver-row small{font-size:9px}
+.track-details{margin-top:11px;padding-top:10px}
+.track-details span{font-size:9px}
+.track-details b{font-size:10px}
+.timeline-title{font-size:11px;margin:14px 0 8px}
+.timeline-item{grid-template-columns:26px 1fr;min-height:48px}
+.timeline-item b{font-size:10px}
+.timeline-item small{font-size:9px}
+.track-summary{padding:10px;font-size:9px}
+.track-summary b{font-size:10px}
+.share-location{height:38px;font-size:10px}
+.secondary-link{font-size:10px}
+
+.track-location-eta{display:grid;grid-template-columns:1fr auto;gap:8px;background:#eff6ff;border:1px solid #dbeafe;border-radius:12px;padding:12px;margin-bottom:10px}.track-location-eta span,.track-location-eta small{display:block;font-size:9px;color:#64748b}.track-location-eta b{display:block;font-size:11px;color:#1e3a8a;margin:4px 0}.eta-pill{background:#fff;border-radius:9px;padding:9px;min-width:104px}.eta-disclaimer{grid-column:1/-1;line-height:1.4}

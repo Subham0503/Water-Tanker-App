@@ -1,0 +1,10 @@
+const express = require("express");
+const Address = require("../models/addressModel");
+const { protect, allow } = require("../middleware/auth");
+const router = express.Router();
+router.use(protect, allow("customer"));
+router.get("/", async (req,res)=>res.json({success:true,addresses:await Address.find({userId:req.user._id}).sort({isDefault:-1,createdAt:1})}));
+router.post("/", async (req,res)=>{ const {label,address,isDefault=false}=req.body; if(!label||!address)return res.status(400).json({success:false,message:"Label and address are required"}); if(isDefault)await Address.updateMany({userId:req.user._id},{isDefault:false}); const item=await Address.create({userId:req.user._id,label,address,isDefault}); res.status(201).json({success:true,address:item}); });
+router.put("/:id", async(req,res)=>{ const item=await Address.findOne({_id:req.params.id,userId:req.user._id}); if(!item)return res.status(404).json({success:false,message:"Address not found"}); if(req.body.isDefault)await Address.updateMany({userId:req.user._id},{isDefault:false}); Object.assign(item,{label:req.body.label??item.label,address:req.body.address??item.address,isDefault:req.body.isDefault??item.isDefault}); await item.save(); res.json({success:true,address:item}); });
+router.delete("/:id", async(req,res)=>{const item=await Address.findOneAndDelete({_id:req.params.id,userId:req.user._id}); if(!item)return res.status(404).json({success:false,message:"Address not found"}); res.json({success:true});});
+module.exports=router;

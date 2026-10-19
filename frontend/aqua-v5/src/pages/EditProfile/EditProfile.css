@@ -1,0 +1,7 @@
+.form-page{padding:18px 12px;flex:1}.edit-avatar{width:68px;height:68px;border-radius:50%;margin:4px auto 20px;background:#eff6ff;color:#2563eb;display:grid;place-items:center}.form-page label{display:flex;flex-direction:column;gap:6px;font-size:9px;font-weight:700;color:#475569;margin-bottom:13px}.form-page input{height:42px;border:1px solid #cbd5e1;border-radius:8px;padding:0 11px;font-size:10px;color:#111;background:#fff;outline:none}.form-page input:focus{border-color:#2563eb}.save-btn{width:100%;height:38px;margin-top:8px;font-size:10px}
+
+.form-page{padding:20px 12px 24px}
+.edit-avatar{width:76px;height:76px;margin:6px auto 22px}
+.form-page label{font-size:10px;gap:7px;margin-bottom:15px}
+.form-page input{height:46px;font-size:11px}
+.save-btn{height:42px;font-size:11px}

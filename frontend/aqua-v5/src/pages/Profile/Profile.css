@@ -1,0 +1,9 @@
+.profile-content{padding:0 10px 12px;flex:1;background:#fff}.profile-hero{margin:4px -10px 10px;background:#2563eb;color:#fff;border-radius:0 0 20px 20px;padding:24px 10px 27px;text-align:center}.profile-avatar{width:78px;height:78px;border-radius:50%;margin:0 auto 9px;background:#fff;color:#2563eb;display:grid;place-items:center;border:5px solid #dbeafe}.profile-hero h1{font-size:16px;margin:0 0 4px}.profile-hero p{font-size:9px;margin:0;opacity:.9}.profile-menu{background:#fff;border:1px solid #e2e8f0;border-radius:10px;overflow:hidden;box-shadow:0 2px 8px #0001}.profile-menu button{width:100%;height:54px;background:#fff;border:0;border-bottom:1px solid #e5e7eb;padding:0 13px;display:flex;align-items:center;justify-content:space-between;color:#334155}.profile-menu button:last-child{border-bottom:0}.profile-menu button span{display:flex;align-items:center;gap:11px;font-size:10px;font-weight:700}.profile-menu button>svg{color:#94a3b8}.profile-menu button:hover{background:#f8fafc}.profile-menu .logout-row{color:#dc2626}.profile-menu .logout-row span{color:#dc2626}
+
+.profile-content{padding:0 10px 20px}
+.profile-hero{padding:27px 10px 30px;margin-bottom:12px}
+.profile-avatar{width:84px;height:84px}
+.profile-hero h1{font-size:18px}
+.profile-hero p{font-size:10px}
+.profile-menu button{height:60px;padding:0 14px}
+.profile-menu button span{font-size:11px}

@@ -1,0 +1,12 @@
+*{box-sizing:border-box}html,body,#root{margin:0;min-height:100%}body{font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif;background:#171717;color:#111827}button,input{font:inherit}.mobile-page{width:min(100%,430px);min-height:100vh;margin:0 auto;background:#fff;display:flex;flex-direction:column}@media(min-width:600px){body{padding:24px 0}.mobile-page{min-height:844px;border-radius:18px;overflow:hidden;box-shadow:0 12px 50px #0006}}
+/* Readability and balanced mobile spacing */
+.mobile-page{overflow-y:auto}
+.header{height:58px}
+.brand{font-size:16px}
+.icon-button{width:34px;height:34px}
+.bottom-nav{min-height:58px;padding:5px 4px 4px}
+.nav-item{min-width:64px;gap:3px}
+.nav-item span{font-size:8px}
+.primary-btn.small{padding:11px 13px;font-size:11px}
+
+.page-loading{min-height:100vh;display:grid;place-items:center;font-family:Arial,sans-serif;color:#334155}

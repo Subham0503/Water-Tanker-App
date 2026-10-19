@@ -1,0 +1,11 @@
+.vendors-content{padding:6px 10px 14px;flex:1}.selected-tanker{min-height:84px;background:#dff2ff;border-radius:7px;padding:7px;display:grid;grid-template-columns:82px 1fr auto;align-items:center;gap:8px;box-shadow:0 2px 4px #0002}.mini-truck{height:72px;display:grid;place-items:center;overflow:hidden}.mini-truck img{width:100%;height:100%;object-fit:contain}.selected-tanker div:nth-child(2){display:flex;flex-direction:column;gap:3px}.selected-tanker strong{font-size:10px}.selected-tanker span{font-size:8px;color:#64748b}.selected-tanker b{font-size:10px}.selected-label{background:#dbeafe;color:#2563eb;border-radius:7px;padding:4px 5px;font-size:7px;font-weight:700}.vendors-content h2{margin:15px 9px 4px;font-size:14px}.vendors-content>p{margin:0 9px 15px;color:#64748b;font-size:9px}.vendor-stack{display:flex;flex-direction:column;gap:11px}
+
+.vendors-content{padding:8px 10px 20px}
+.selected-tanker{min-height:96px;padding:9px;grid-template-columns:96px 1fr auto;gap:10px}
+.selected-tanker .mini-truck{height:84px}
+.selected-tanker strong{font-size:12px}
+.selected-tanker span{font-size:9px}
+.selected-tanker b{font-size:12px}
+.vendors-content h2{margin:17px 9px 5px;font-size:16px}
+.vendors-content>p{margin:0 9px 16px;font-size:10px}
+.vendor-stack{gap:13px}

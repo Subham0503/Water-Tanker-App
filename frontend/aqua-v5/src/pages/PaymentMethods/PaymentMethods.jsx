@@ -1,0 +1,7 @@
+import React,{useState} from "react";
+import { Check, CreditCard, Plus } from "lucide-react";
+import { useNavigate } from "react-router-dom";
+import Header from "../../components/Header/Header";
+import BottomNav from "../../components/BottomNav/BottomNav";
+import "./PaymentMethods.css";
+export default function PaymentMethods(){const navigate=useNavigate();const [selected,setSelected]=useState("upi");return <main className="mobile-page"><Header back title="Payment Methods"/><section className="methods-page"><button className={`saved-method ${selected==="upi"?"selected":""}`} onClick={()=>setSelected("upi")}><CreditCard size={19}/><div><b>UPI (Google Pay)</b><small>amanverma@okaxis</small></div>{selected==="upi"&&<Check size={16}/>}</button><button className={`saved-method ${selected==="phonepe"?"selected":""}`} onClick={()=>setSelected("phonepe")}><CreditCard size={19}/><div><b>PhonePe</b><small>+91 98765 43210</small></div>{selected==="phonepe"&&<Check size={16}/>}</button><button className={`saved-method ${selected==="paytm"?"selected":""}`} onClick={()=>setSelected("paytm")}><CreditCard size={19}/><div><b>Paytm</b><small>+91 98765 43210</small></div>{selected==="paytm"&&<Check size={16}/>}</button><button className="add-method"><Plus size={18}/>Add New Method</button><button className="primary-btn method-done" onClick={()=>navigate("/profile")}>Done</button></section><BottomNav/></main>}

@@ -1,9 +1,18 @@
-Backend/node_modules/
-Frontend/node_modules/
+# Dependencies
+node_modules/
 
+# Environment variables and secrets
 .env
+.env.*
+!.env.example
 
+# Build outputs
 dist/
 build/
 
+# Editor settings
 .vscode/
+
+# Logs
+*.log
+npm-debug.log*

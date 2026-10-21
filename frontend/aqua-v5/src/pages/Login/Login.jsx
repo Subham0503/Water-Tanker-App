@@ -5,6 +5,7 @@ import {useAuth} from "../../context/AuthContext";
 import {api} from "../../api/client";
 import {appConfig} from "../../config/appConfig";
 import "./Login.css";
+import tankerImage from "../../assets/water-tanker.png";
 export default function Login(){
  const navigate=useNavigate(); const [params]=useSearchParams(); const token=params.get("token");
  const {login,register}=useAuth(); const [mode,setMode]=useState(token?"reset":"login"),[role,setRole]=useState("customer"),[show,setShow]=useState(false),[message,setMessage]=useState(""),[busy,setBusy]=useState(false);
@@ -20,7 +21,7 @@ export default function Login(){
  }catch(err){setMessage(err.message||'Something went wrong.');}finally{setBusy(false)}};
  const title=forgot?'Forgot password':reset?'Set a new password':signup?'Create your account':'Welcome back';
  return <main className="login-page"><section className="login-card"><div className="login-brand"><div className="login-logo"><Waves size={25}/></div><div><h1>{appConfig.brand.name}</h1><p>{appConfig.brand.tagline}</p></div></div>
- <div className="login-hero"><div><h2>{title}</h2><p>{forgot?'Enter your account email and we will send reset instructions.':reset?'Choose a new password for your account.':signup?'Register once and use AquaConnect as a customer or vendor.':'Login to continue to your AquaConnect account.'}</p></div><img src="/src/assets/water-tanker.png" alt="Water tanker"/></div>
+ <div className="login-hero"><div><h2>{title}</h2><p>{forgot?'Enter your account email and we will send reset instructions.':reset?'Choose a new password for your account.':signup?'Register once and use AquaConnect as a customer or vendor.':'Login to continue to your AquaConnect account.'}</p></div><img src={tankerImage} alt="Water tanker" /></div>
  {!forgot&&!reset&&<><div className="mode-switch"><button type="button" className={!signup?'active':''} onClick={()=>{setMode('login');setMessage('')}}>Login</button><button type="button" className={signup?'active':''} onClick={()=>{setMode('signup');setRole('customer');setMessage('')}}>Sign Up</button></div>
  <div className="role-section"><p className="field-label">{signup?'Create account as':'Continue as'}</p><div className="role-switch"><button type="button" className={role==='customer'?'role-option active':'role-option'} onClick={()=>{setRole('customer');setMessage('')}}><UserRound size={18}/><span>Customer</span></button><button type="button" className={role==='vendor'?'role-option active vendor':'role-option'} onClick={()=>{setRole('vendor');setMessage('')}}><Store size={18}/><span>Vendor</span></button>{!signup&&<button type="button" className={role==='admin'?'role-option active admin-role-option':'role-option'} onClick={()=>{setRole('admin');setMessage('')}}><ShieldCheck size={18}/><span>Admin</span></button>}</div></div></>}
  <form className="login-form" onSubmit={submit}>
